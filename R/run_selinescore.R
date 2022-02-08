@@ -2,6 +2,7 @@
 
 library("GSVA")
 library("preprocessCore")
+library("FSQN")
 
 args <- commandArgs(trailingOnly=TRUE)
 
@@ -16,7 +17,7 @@ if (length(args)!=3) {
 source('function.R')
 
 countsTableNorm <- read.delim(exprMat)
-boston <- readRDS(bostonDist)
+boston <- read.delim(bostonDist)
 
 result <- calculate_selinescore(x=countsTableNorm, normalizeToBoston=TRUE, bostonDist=boston)
 
