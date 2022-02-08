@@ -5,7 +5,7 @@ This repository contains the code needed to calculate selinexor sensitivity sign
 The signature is a GSVA combined z-score that is calculated after quantile-normalization to the original BOSTON discovery expression matrix. It is implemented in R. This repository provides a simple rscript, containing a function that can easily calculate signature scores on new data.
 
 ## Requirements
-Requires the GSVA and preprocessCore packages in R 3.5 or higher.
+Requires the GSVA, preprocessCore, and FSQN packages in R 3.5 or higher.
 
 ## Installation & Usage
 
