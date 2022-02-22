@@ -4,7 +4,7 @@ class: CommandLineTool
 
 requirements:
   DockerRequirement:
-    dockerPull: "sinaiiidgst/selinescore:c95d5b7"
+    dockerPull: "sinaiiidgst/selinescore:21ef852"
   InlineJavascriptRequirement: {}
 
 inputs:
