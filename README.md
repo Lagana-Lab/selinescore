@@ -14,13 +14,13 @@ Requires the GSVA, preprocessCore, and FSQN packages in R 3.5 or higher.
 The Rscript uses positional functions as follows:
 
 ```
-Rscript R/run_selinescore.R [/path/to/expression_matrix.tsv] [/path/to/reference/boston_expression_matrix.tsv] [/path/to/output/directory]
+Rscript R/run_selinescore.R [/path/to/expression_matrix.csv] [/path/to/reference/boston_expression_matrix.csv.gz]
 ```
 
 An example command might look something like this:
 
 ```
-Rscript R/run_selinescore.R expression_matrix.tsv data/boston_reference_matrix.tsv data/
+Rscript R/run_selinescore.R data/example_input_matrix.csv data/boston_reference_matrix.csv.gz
 ```
 
 ## R function
@@ -32,4 +32,9 @@ source('R/function.R')
 ```
 
 ## Docker
+
 A dockerfile is included if you would like to build the container from scratch.
+
+## CWL
+
+A cwltool file is included, which uses the docker container.

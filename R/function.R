@@ -1,6 +1,6 @@
 calculate_selinescore <- function(
   x,  normalizeToBoston=FALSE, bostonDist=NA,  threshold=0,
-  signature_genes = c("ETV7", "DUSP1", "WNT10A")
+  signature_genes = c("ENSG00000010030", "ENSG00000120129", "ENSG00000135925")
 ){
   library(GSVA)
 
